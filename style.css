@@ -1,0 +1,417 @@
+* {
+    background-color: #000;
+    color: #bdbdbd;
+    overflow: hidden;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-content {
+    display: grid;
+    grid-template-rows: 87vh 13vh;
+    grid-template-columns: 25vw 75vw;
+}
+
+.iconn{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 1.2rem;
+    background-color: inherit;
+}
+
+.sidebar {
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
+.homebar {
+    border-radius: 0.6rem;
+}
+
+.home {
+    background-color: #161616;
+    display: flex;
+    padding: 0.8rem;
+}
+
+.home i {
+    background-color: #161616;
+    padding-right: 0.8rem;
+}
+
+.nav-btn {
+    background-color: inherit;
+    font-weight: 550;
+}
+
+.library {
+    margin-top: 1rem;
+    background-color: #161616;
+    border-radius: 0.6rem;
+    height: max-content;
+    flex-grow: 1;
+}
+
+.your-library {
+    background-color: #161616;
+    display: inline-flex;
+    width: calc(100% - 1.2rem);
+    justify-content: space-between;
+    margin: 1.2rem 0px 0px 1.2rem;
+}
+
+.lib-txt, .lib-nav {
+    background-color: inherit;
+}
+
+.lib-1 {
+    background-color: #161616;
+    display: inline-flex;
+    margin-right: .4rem;
+}
+
+.lib-2 {
+    background-color: #161616;
+    display: inline-flex;
+    margin-right: .7rem;
+}
+
+.lib-nav {
+    margin-right: 1.8em;
+    font-size: 1.2rem;
+}
+
+.lib-box {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius:1rem;
+    background-color: #202020;
+}
+
+.lib-box * {
+    background-color: #202020;
+}
+
+.playlist-button {
+    display: inline-block;
+    color: #000;
+    border-radius: 1rem;
+    background-color: #fff;
+    border: 0px;
+    padding: .5rem 1rem;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.box-head{
+    color: #fff;
+    font-size: .95rem;
+    font-weight: 450;
+    margin-bottom: 1rem;
+}
+
+.box-body {
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.content {
+    background-color: #121212;
+    padding: 0px 1rem;
+    overflow: scroll;
+}
+
+.content * {
+    background-color: #121212;
+}
+
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    background-color: #121212;
+    justify-content: space-between;
+    padding: 1rem 1rem 0rem 0rem;
+}
+
+.stk-nav-l, .stk-nav-r {
+    display: flex;
+    background-color: inherit;
+    align-items: center;
+}
+
+.playlist-button {
+    display: flex;
+    gap: .3rem;
+    color: #121212;
+    border-radius: 1rem;
+    background-color: #fff;
+    border: 0px;
+    font-weight: 550;
+    cursor: pointer;
+    align-items: center;
+    padding: .6rem 1rem;
+    height: fit-content;
+    margin-right: 1rem;
+}
+
+.stk-nav-l img{
+    background-color: #1e1c1c;
+    padding: .4rem .4rem .4rem .5rem;
+    width: 1rem;
+    margin-right: .4rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.defocused {
+    color: #202020;
+    opacity: .7;
+}
+
+.blk {
+    color: #fff;
+    padding: .7rem 1.1rem;
+    background-color: #000;
+}
+
+.blk * {
+    color: #fff;
+}
+
+.blk i {
+    font-size: 1rem;
+}
+
+.r-icon {
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #000;
+    padding: .7rem;
+    border-radius: 50%;
+}
+
+.card-header {
+    color: #fff;
+    margin: .7rem 0rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card {
+    border-radius: .3rem;
+    background-color: #202020;
+    width: 10rem;
+    z-index: 8;
+    margin: 0rem 1rem 1rem 0rem;
+    padding: .7rem;
+    box-shadow: 2px 2px 5px #000;
+}
+
+.card * {
+    background-color: #202020;
+}
+
+.box-ttl {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: .4rem 0rem;
+}
+
+.box-bdy {
+    color: #bdbdbd;
+    font-size: .6rem;
+    line-height: 1.2rem;
+    padding-right: .1rem;
+}
+
+.card img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: .3rem;
+}
+
+.line {
+    height: .5px;
+    width: auto;
+    background-color: #bdbdbd;
+    margin: 3rem 4rem 8rem;
+}
+
+.player {
+    grid-column: 1/3;
+    background-color: #121212;
+    display: flex;
+}
+
+.player-left {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    background-color: #000;
+}
+.player-center {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+}
+.player-right {
+    width: 25%;
+    background-color: #000;
+    align-items: center;
+    display: flex;
+}
+
+/* Left */
+.song-poster {
+    height: 4rem;
+    border-radius: .3rem;
+    margin: 0rem 1rem;
+}
+
+.song-text {
+    background-color: inherit;
+    margin-right: 1rem;
+}
+
+.s-name, .s-name2 {
+    font-size: .8rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.s-name2 {
+    font-size: .7rem;
+    line-height: 1.2rem;
+    color: #bdbdbd;
+}
+
+.s-icon {
+    background-color: inherit;
+    height: 1.6rem;
+    margin-right: .3rem;
+}
+
+.wtf {
+    margin-top: .15rem;
+}
+
+.smaller-icon {
+    height: 1.2rem;
+    opacity: .7;
+}
+
+/* Center */
+.playback-btns {
+    display: flex;
+    align-items: center;
+}
+
+.playback-btn {
+    opacity: .7;
+    width: 1rem;
+    margin: 0px .5rem;
+    background-color: inherit;
+}
+
+.playback-btn:hover {
+    opacity: 1;
+}
+
+.big-btn {
+    width: 2rem;
+    opacity: 1;
+}
+
+.prog {
+    margin: 0px .6rem;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.rg {
+    width: 30rem;
+    height: .25rem;
+}
+
+.progress-bar {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Right */
+.c-icon {
+    width: 1.5rem;
+    font-size: .9rem;
+    font-weight: 100;
+    margin: .4rem;
+    opacity: .8;
+}
+
+.c-icon2 {
+    width: 1.2rem;
+    height: 1.15rem;
+    opacity: .7;
+    margin: .4rem;
+}
+
+.maxx {
+    margin-left: 1rem;
+}
+
+.set {
+    opacity: 1;
+    color: #fff;
+}
+
+.set * {
+    opacity: 1;
+    color: #fff;
+}
+
+.reset:hover  {
+    opacity: 1;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.decoration:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sound {
+    margin-right: .2rem;
+}
+
+.rgb {
+    width: 8rem;
+    height: .25rem;
+}
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}

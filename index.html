@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="homebar">
+                <div class="home set"><i class="fa-solid fa-house point"></i><p class="nav-btn point">Home</p></div>
+                <div class="home reset"><i class="fa-solid fa-magnifying-glass point"></i><p class="nav-btn point">Search</p></div>
+            </div>
+            <div class="library">
+                <div class="your-library">
+                    <div class="lib-1">
+                        <img class="lib-icon iconn" src="./assets/library_icon.png"></i>
+                        <p class="lib-txt">Your library</h4>
+                    </div>
+                    <div class="lib-2">
+                        <i class="fa-solid fa-plus icon lib-nav reset" id="lib-icons"></i>
+                        <i class="fa-solid  fa-arrow-right icon lib-nav reset" id="lib-icons"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <p class="box-head">Create your first playlist</p>
+                    <p class="box-body">It's easy, we'll help you</p>
+                    <button class="playlist-button">Create playlist</button>
+                </div>
+
+                <div class="lib-box">
+                    <p class="box-head">Let's find some podcasts to follow</p>
+                    <p class="box-body">We'll keep you updated on new episodes</p>
+                    <button class="playlist-button">Browse Podcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+                <div class="sticky-navbar">
+                    <div class="stk-nav-l">
+                        <img src="./assets/backward_icon.png" class="sticky-nav-icon defocused">
+                        <img src="./assets/forward_icon.png" class="sticky-nav-icon hide">
+                    </div>
+                    <div class="stk-nav-r">
+                        <button class="playlist-button wht hide">Explore Premium</button>
+                        <button class="playlist-button blk"><i class="fa-regular fa-circle-down"></i>Install App</button>
+                        <i class="fa-regular fa-user r-icon"></i>
+                    </div>
+                </div>
+                <div class="cardss">
+                    <div class="recent">
+                        <p class="card-header">Recently Played</p>
+                        <div class="card-flex">
+                            <div class="card">
+                                <img src="./assets/card1img.jpeg">
+                                <p class="box-ttl">Top 50 - Global</p>
+                                <p class="box-bdy">Your daily updates of the most played tracks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="originals">
+                        <p class="card-header">Spotify original & exclusive podcasts</p>
+                        <div class="card-flex">
+                            <div class="card">
+                                <img src="./assets/card2img.jpeg">
+                                <p class="box-ttl">Top 50 - Global</p>
+                                <p class="box-bdy">Your daily updates of the most played tracks</p>
+                            </div>
+                            <div class="card">
+                                <img src="./assets/card3img.jpeg">
+                                <p class="box-ttl">Top 50 - Global</p>
+                                <p class="box-bdy">Your daily updates of the most played tracks</p>
+                            </div>
+                            <div class="card">
+                                <img src="./assets/card4img.jpeg">
+                                <p class="box-ttl">Top 50 - Global</p>
+                                <p class="box-bdy">Your daily updates of the most played tracks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-charts">
+                        <p class="card-header">Top charts</p>
+                        <div class="card-flex">
+                            <div class="card">
+                                <img src="./assets/card5img.jpeg">
+                                <p class="box-ttl">Top Songs Globally</p>
+                                <p class="box-bdy">Top played tracks globally wrapped in a playlist</p>
+                            </div>
+                            <div class="card">
+                                <img src="./assets/card6img.jpeg">
+                                <p class="box-ttl">Top Songs in India</p>
+                                <p class="box-bdy">Top played tracks in India wrapped up in a playlist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="line"></div>
+        </div>
+        <div class="player">
+            <div class="player-left">
+                <img src="./assets/HW/album_picture.jpeg" class="song-poster">
+                <div class="song-text">
+                    <p class="s-name decoration">Daylight</p>
+                    <p class="s-name2 decoration">Holeen Coover</p>
+                </div>
+                <img class="s-icon smaller-icon reset" src="./assets/HW/album_icon1.png">
+                <img class="s-icon wtf reset" src="./assets/HW/album_icon2.png">
+            </div>
+            <div class="player-center">
+                <div class="playback-btns">
+                    <img src="./assets/player_icon1.png" class="playback-btn reset">
+                    <img src="./assets/player_icon2.png" class="playback-btn reset">
+                    <img src="./assets/player_icon3.png" class="playback-btn big-btn">
+                    <img src="./assets/player_icon4.png" class="playback-btn reset">
+                    <img src="./assets/player_icon5.png" class="playback-btn reset">
+                </div>
+                <div class="progress-bar">
+                    <p class="prog">0:00</p>
+                    <input type="range" min="0" max="100" step="1" value="33" class="rg"></input>
+                    <p class="prog">3:33</p>
+                </div>
+            </div>
+            <div class="player-right">
+                <img src="./assets/HW/controls_icon1.png" class="c-icon reset">
+                <img src="./assets/HW/controld_icon2.png" class="c-icon reset">
+                <img src="./assets/HW/controls_icon3.png" class="c-icon2 reset">
+                <img src="./assets/HW/controls_icon4.png" class="c-icon2 reset">
+                <img src="./assets/HW/controls_icon5.png" class="c-icon reset sound">
+                <input type="range" min="0" max="100" step="1" value="33" class="rgb"></input>
+                <i class="fa-solid fa-up-right-and-down-left-from-center c-icon maxx reset"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
