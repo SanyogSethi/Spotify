@@ -1,1 +1,3 @@
 # Spotify
+This is a beginner level project that I created while learning basic front-end technologies like Vanilla CSS, Bootstrap etc.
+Would be converting it to something better...
